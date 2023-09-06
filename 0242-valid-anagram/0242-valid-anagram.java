@@ -9,9 +9,7 @@ class Solution {
     
     public boolean isAnagram(String s, String t) 
     {
-        String ns=sortString(s);
-        String nt=sortString(t);
-        if(ns.equals(nt))
+        if(sortString(s).equals(sortString(t)))
             return true;
         return false;
     }
