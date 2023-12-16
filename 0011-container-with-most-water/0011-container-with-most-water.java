@@ -8,12 +8,8 @@ class Solution {
             max=Math.max(area,max);
             if(height[index1]<height[index2])
                 index1++;
-            else if(height[index1]>height[index2])
+            else
                 index2--;
-            else{
-                index1++;
-                index2--;
-            }
         }
         return max;
     }
